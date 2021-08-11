@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Movie = (props) => (
     <div className="movie-item">
         <div>
@@ -5,7 +7,7 @@ export const Movie = (props) => (
         </div>
         <div className="movie-excerpt">
             <h3>{props.movie.title}</h3>
-            <a className="btn btn-primary" href="#">Ver detalhes</a>
+            <Link to={`/movie/${movie.id}` lassName="btn btn-primary"}>Ver detalhes</Link>
         </div>
     </div>
 )
