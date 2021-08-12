@@ -6,5 +6,6 @@ export const ApplicationRoutes = () => (
     <>
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/movie/:id" component={MovieDetail}></Route>
+        <Route exact path="/favorites" component={MovieDetail}></Route>
     </>
 )

@@ -2,5 +2,13 @@ const initialState = {
     movies: []
 }
 export const favorites = (state = initialState, action) => {
-    return state;
+    switch (action.type) {
+        case ADD_MOVIE:
+            return {
+                ... state,
+                movies: state.movies.concat(action.payload)
+            }
+        default:
+            return state;
+    }
 }
